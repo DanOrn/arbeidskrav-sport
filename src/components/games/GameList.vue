@@ -1,11 +1,11 @@
 <template>
     <section class="container">
-        <h2>Spel vi spelar no</h2>
+        <h2 class="mb-4">Some of the most popular sports</h2>
         <section class="row">
             <game-item v-for="(game, i) in games" :key="i"
                 :image="game.image"
                 :title="game.title"
-                :childFriendly="game.childFriendly"
+                :description="game.description"
             ></game-item>
         </section>
     </section>

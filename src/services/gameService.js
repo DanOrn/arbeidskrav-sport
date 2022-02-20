@@ -1,11 +1,11 @@
 const gameService = ( function(){  
     const games = ([
-        {title: "Cyberpunk 2077", image: "pilogbue.png", childFriendly: false},
-        {title: "DOTA 2", image: "klatring.png", childFriendly: false},
-        {title: "League Of Legends", image: "pingpong.png", childFriendly: false},
-        {title: "Starcraft 2", image: "esport.png", childFriendly: false},
-        {title: "Zelda A Link's Awakening", image: "fotball.png", childFriendly: true},
-        {title: "Animal Crossing", image: "kurling.png", childFriendly: true}
+        {title: "Archery", image: "archery.jpg", description: "En artig sport"},
+        {title: "Climbing", image: "climbing.jpg", description: "En artig sport"},
+        {title: "Table tennis", image: "tabletennis.jpg", description: "En artig sport"},
+        {title: "E-Sports", image: "esport.jpg", description: "En artig sport"},
+        {title: "Football", image: "football.jpg", description: "En artig sport"},
+        {title: "Curling", image: "curling.jpg", description: "En artig sport"}
     ]);
 
     const getAll = () => {

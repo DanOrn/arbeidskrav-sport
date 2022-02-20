@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section >
         <game-list></game-list>
     </section>
 </template>

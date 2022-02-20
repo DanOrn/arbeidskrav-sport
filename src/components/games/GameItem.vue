@@ -1,11 +1,10 @@
 <template>
     <article class="col-sm-12 col-md-6 col-lg-4">
-        <div class=" p-3 text-center gameBox">
+        <div class="gameBox text-light">
             <img :src="getImage()">
             <h3>{{title}}</h3>
-            <div v-bind:class="childFriendly ? 'yeschildFriendly' : 'noChildFriendly'">
-                <h4>Barnevennlig: {{childFriendly}}</h4>
-            </div>
+            <p>{{ description }} </p>
+
         </div>
     </article>
 </template>
@@ -14,7 +13,7 @@ export default {
     props: {
         image: String,
         title: String,
-        childFriendly: Boolean
+        description: String
     },
     setup(props){
         const getImage = () =>{
@@ -32,16 +31,18 @@ export default {
         width: 100%;
     }
     .gameBox{
-        margin-top: 20px;
-        background-color: #A3CCAB;
-        border: #34675C;
-        border-style: solid;
-        border-width: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        background-color: #1e90ff;
+        
+
     }
-    .noChildFriendly{
-        color:darkred;
+    .gameBox h3, p {
+        margin-left: 10px;
     }
-    .yeschildFriendly{
-        color: green;
+
+        .gameBox img {
+        margin-bottom: 5px;
     }
+
 </style>
