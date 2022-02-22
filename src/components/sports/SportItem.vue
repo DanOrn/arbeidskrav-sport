@@ -1,10 +1,9 @@
 <template>
     <article class="col-sm-12 col-md-6 col-lg-4">
-        <div class="gameBox text-light">
+        <div class="sportBox text-light">
             <img :src="getImage()">
             <h3>{{title}}</h3>
             <p>{{ description }} </p>
-
         </div>
     </article>
 </template>
@@ -30,18 +29,18 @@ export default {
     img{
         width: 100%;
     }
-    .gameBox{
+    .sportBox{
         padding-bottom: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
         background-color: #1e90ff;
         
 
     }
-    .gameBox h3, p {
+    .sportBox h3, p {
         margin-left: 10px;
     }
 
-        .gameBox img {
+        .sportBox img {
         margin-bottom: 5px;
     }
 

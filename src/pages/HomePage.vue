@@ -1,15 +1,14 @@
 <template>
     <section >
-        <game-list></game-list>
+        <sport-list></sport-list>
     </section>
 </template>
 <script>
-
-import GameList from '../components/games/GameList.vue'
+import SportList from '../components/sports/SportList.vue'
 
 export default {
     components: {
-        GameList
+        SportList
     }
 }
 </script>

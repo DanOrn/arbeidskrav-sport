@@ -3,22 +3,21 @@
         <main class="container">
             <h2>Add a sport</h2>
             <div class="input-group mb-3">
-                <input type="text" class="searchField" v-model="newGame" placeholder="Ex: golf, running..."
+                <input type="text" class="searchField" v-model="newSport" placeholder="Ex: golf, running..."
                     aria-label="SportInput">
                 <div class="input-group-append">
-                    <button class="addGameButton btn btn-danger" @click="addNewGame" type="button" value="Add sport">Add sport</button>
+                    <button class="addSportButton btn btn-primary" @click="addNewSport" type="button" value="Add sport">Add sport</button>
                 </div>
             </div>
 
 
             <section class="row">
-                <article class="col-sm-6 col-md-4 col-lg-3" h4 v-for="(game, i) in games" :key="i">
-                    <div class="text-center text-light mt-2 gameAddedBox bg-dark">
-                        <div v-if="game === ''">
-                            <h4 class="text-danger">Empty field</h4>
+                <article class="col-sm-6 col-md-4 col-lg-3" h4 v-for="(sport, i) in sports" :key="i">
+                    <div class="text-center text-light mt-2 sportAddedBox bg-secondary">
+                        <div v-if="sport === ''">
                         </div>
                         <div v-else>
-                            <h4>{{game}}</h4>
+                            <h4>{{sport}}</h4>
                         </div>
                     </div>
                 </article>
@@ -33,17 +32,17 @@
 
     export default {
         setup() {
-            const games = ref([]);
-            const newGame = ref("");
+            const sports = ref([]);
+            const newSport = ref("");
 
-            const addNewGame = () => {
-                games.value.push(newGame.value);
+            const addNewSport = () => {
+                sports.value.push(newSport.value);
             }
 
             return {
-                games,
-                addNewGame,
-                newGame
+                sports,
+                addNewSport,
+                newSport
             }
         }
     }
@@ -57,7 +56,7 @@
         margin-right: 10px;
     }
 
-    .gameAddedBox {
+    .sportAddedBox {
         padding: 10px 30px;
 
     }
