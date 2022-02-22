@@ -1,6 +1,7 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import HomePage from '../pages/HomePage'
 import AddSport from '../pages/AddSport'
+import PageSearch from '../pages/PageSearch'
 
 
 const routes = [
@@ -14,6 +15,11 @@ const routes = [
         path: "/addSport",
         component: AddSport
     },
+    {
+        name: "PageSearch",
+        path: "/pageSearch",
+        component: PageSearch
+    }
     
 ];
 
