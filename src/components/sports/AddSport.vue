@@ -1,12 +1,12 @@
 <template>
     <section>
         <main class="container">
-            <h2>Add a sport</h2>
+            <h2>Add sport</h2>
             <div class="input-group mb-3">
                 <input type="text" class="searchField" v-model="newSport" placeholder="Ex: golf, running..."
                     aria-label="SportInput">
                 <div class="input-group-append">
-                    <button class="addSportButton btn btn-primary" @click="addNewSport" type="button" value="Add sport">Add sport</button>
+                    <button class="addSportButton btn-primary" @click="addNewSport" type="button" value="Add sport">Add</button>
                 </div>
             </div>
 
@@ -50,11 +50,17 @@
 <style>
 
 
-    .searchField {
-        padding: 2px 50px 2px 10px;
-        border-style: solid;
-        margin-right: 10px;
-    }
+
+.searchField {
+  margin: 0 0 10px 0;
+  max-width: 100%;
+  border-color:#0275d8;
+}
+
+.addSportButton {
+    margin-left: 10px;
+}
+    
 
     .sportAddedBox {
         padding: 10px 30px;

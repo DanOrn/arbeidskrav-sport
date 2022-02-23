@@ -1,10 +1,10 @@
 <template>
   <div>
     <the-navigation></the-navigation>
-    <div class="container">
+
       <router-view></router-view>
-    </div>
-    
+
+
     
   </div>
 </template>
@@ -12,8 +12,8 @@
 import TheNavigation from "./components/shared/TheNavigation.vue"
 
 
-
 export default {
+
   name: 'App',
   components: {
     TheNavigation 
